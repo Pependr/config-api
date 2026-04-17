@@ -1,0 +1,17 @@
+[project]
+name = "configapi"
+version = "0.1.0"
+description = "Tools for handling config files"
+readme = "README.md"
+authors = [
+    { name = "Pependr", email = "antonkudrikov88@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pytest>=9.0.2",
+    "tomlkit>=0.14.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.9,<0.11.0"]
+build-backend = "uv_build"
