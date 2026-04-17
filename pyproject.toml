@@ -1,7 +1,7 @@
 [project]
 name = "configapi"
 version = "0.1.0"
-description = "Tools for handling config files"
+description = "Tools for handling and managing config files"
 readme = "README.md"
 authors = [
     { name = "Pependr", email = "antonkudrikov88@gmail.com" }

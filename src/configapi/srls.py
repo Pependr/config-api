@@ -1,5 +1,5 @@
-from configapi.exceptions import RegistryError
-from configapi.typingtools import TranslateFn, is_builtin
+from configapi._internals.exceptions import RegistryError
+from configapi._internals.typingtools import TranslateFn, is_builtin
 
 from typing import Any
 from annotationlib import get_annotations
