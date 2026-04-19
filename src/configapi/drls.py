@@ -30,10 +30,10 @@ def resolve[O](cls: type[O]) -> TranslateFn[Any, O]:
 
 
 def pop(cls: type) -> None:
-    drl: TranslateFn[Any, Any] | None = _REGISTRY.pop(cls)
-
-    if drl is None:
+    if cls not in _REGISTRY:
         raise RegistryError(cls, _REGISTRY, f"No deserializer registered for type {cls.__name__}")
+    
+    _REGISTRY.pop(cls)
 
 
 def deserialize[O](Type: type[O], obj: object) -> O:
